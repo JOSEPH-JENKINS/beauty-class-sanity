@@ -6,7 +6,14 @@ export const heroSection = defineType({
   type: 'object',
   fields: [
     {name: 'heading', type: 'string', title: 'Heading'},
-    {name: 'image', title: 'Background Image', type: 'image', options: {hotspot: true}},
+    {
+      name: 'video',
+      title: 'Hero Video',
+      type: 'file',
+      options: {
+        accept: 'video/*',
+      },
+    },
     {name: 'ctaLabel', title: 'CTA Label', type: 'string'},
     {name: 'ctaLink', title: 'CTA Link', type: 'url'},
   ],

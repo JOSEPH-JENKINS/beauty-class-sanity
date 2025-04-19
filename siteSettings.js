@@ -12,42 +12,9 @@ export const siteSettings = defineType({
       options: {hotspot: true},
     },
     {
-      name: 'navigation',
-      title: 'Navigation Links',
-      type: 'array',
-      of: [
-        {
-          type: 'object',
-          fields: [
-            {name: 'label', title: 'Label', type: 'string'},
-            {name: 'url', title: 'URL', type: 'url'},
-            {
-              name: 'openInNewTab',
-              title: 'Open in new tab?',
-              type: 'boolean',
-            },
-          ],
-        },
-      ],
-    },
-    {
       name: 'footerText',
       title: 'Footer Text',
       type: 'text',
-    },
-    {
-      name: 'footerLinks',
-      title: 'Footer Links',
-      type: 'array',
-      of: [
-        {
-          type: 'object',
-          fields: [
-            {name: 'label', title: 'Label', type: 'string'},
-            {name: 'url', title: 'URL', type: 'url'},
-          ],
-        },
-      ],
     },
     {
       name: 'socialLinks',
