@@ -6,10 +6,20 @@ export const event = defineType({
   type: 'document',
   fields: [
     {name: 'title', type: 'string', title: 'Title'},
+    {name: 'excerpt', type: 'string', title: 'Short description.'},
+    {name: 'slug', type: 'slug', title: 'Slug', options: {source: 'title'}},
     {name: 'description', type: 'text', title: 'Description'},
     {name: 'eventbriteLink', type: 'url', title: 'Eventbrite Link'},
     {name: 'date', type: 'datetime', title: 'Date'},
     {name: 'location', type: 'string', title: 'Location'},
     {name: 'image', type: 'image', title: 'Image'},
+    {name: 'price', type: 'number', title: 'Price'},
+    {
+      name: 'testimonials',
+      title: 'Testimonials (Past Event)',
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'testimonial'}]}],
+      description: 'Testimonials specific to this event. Only used on past events.',
+    },
   ],
 })
