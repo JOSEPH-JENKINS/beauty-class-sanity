@@ -13,6 +13,7 @@ import {softCta} from './sections/softCtaSection'
 import {contactPage} from './contact'
 import {modalSection} from './modalSection'
 import {siteSettings} from '../siteSettings'
+import {products} from './products'
 
 export const schemaTypes = [
   testimonial,
@@ -25,6 +26,7 @@ export const schemaTypes = [
   contactPage,
   homepage,
   modalSection,
+  products,
 
   //section types
   heroSection,

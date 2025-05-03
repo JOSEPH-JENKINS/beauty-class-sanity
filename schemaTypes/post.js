@@ -8,7 +8,12 @@ export const blogPost = defineType({
     {name: 'title', type: 'string', title: 'Title'},
     {name: 'excerpt', type: 'string', title: 'Short description.'},
     {name: 'slug', type: 'slug', title: 'Slug', options: {source: 'title'}},
-    {name: 'body', type: 'text', title: 'Body'},
+    {
+      name: 'body',
+      type: 'array',
+      title: 'Body',
+      of: [{type: 'block'}],
+    },
     {name: 'category', type: 'reference', to: [{type: 'category'}]},
     {name: 'coverImage', type: 'image', title: 'Cover Image'},
     {name: 'publishedAt', type: 'datetime', title: 'Published At'},
