@@ -6,6 +6,11 @@ export const contactPage = defineType({
   type: 'document',
   fields: [
     {name: 'heading', type: 'string', title: 'Heading'},
-    {name: 'description', type: 'text', title: 'Short description.'},
+    {
+      name: 'body',
+      type: 'array',
+      title: 'Body',
+      of: [{type: 'block'}],
+    },
   ],
 })
