@@ -15,10 +15,14 @@ import {contactPage} from './contact'
 import {modalSection} from './modalSection'
 import {siteSettings} from '../siteSettings'
 import {products} from './products'
+import {productType} from './productType'
+import {shopPage} from './shop'
 import {instagramSection} from './sections/instagramSection'
 
 export const schemaTypes = [
   testimonial,
+  productType,
+  shopPage,
   artist,
   category,
   event,

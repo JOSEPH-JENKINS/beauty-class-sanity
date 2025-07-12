@@ -10,6 +10,12 @@ export const products = defineType({
     {name: 'image', type: 'image', title: 'Image'},
     {name: 'slug', type: 'slug', title: 'Slug', options: {source: 'title'}},
     {
+      name: 'productType',
+      title: 'Product Type',
+      type: 'reference',
+      to: [{type: 'productType'}],
+    },
+    {
       name: 'description',
       type: 'array',
       title: 'Body',

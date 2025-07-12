@@ -36,7 +36,6 @@ export const instagramSection = defineType({
               title: 'Image',
               type: 'image',
             }),
-            defineField({name: 'postUrl', title: 'Post URL', type: 'url'}),
           ],
         },
       ],
