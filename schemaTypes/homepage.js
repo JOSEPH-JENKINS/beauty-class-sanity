@@ -20,9 +20,11 @@ export const homepage = defineType({
       type: 'array',
       of: [
         {type: 'heroSection'},
+        {type: 'aboutSection'},
         {type: 'testimonialSection'},
         {type: 'softCtaSection'},
         {type: 'brandsSection'},
+        {type: 'instagramSection'},
       ],
     },
   ],

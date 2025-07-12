@@ -12,7 +12,13 @@ export const blogPost = defineType({
       name: 'body',
       type: 'array',
       title: 'Body',
-      of: [{type: 'block'}],
+      of: [
+        {type: 'block'},
+        {
+          type: 'image',
+          options: {hotspot: true},
+        },
+      ],
     },
     {name: 'category', type: 'reference', to: [{type: 'category'}]},
     {name: 'coverImage', type: 'image', title: 'Cover Image'},

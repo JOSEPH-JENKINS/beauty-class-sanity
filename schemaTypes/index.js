@@ -10,10 +10,12 @@ import {heroSection} from './sections/heroSection'
 import {testimonialSection} from './sections/testimonialSection'
 import {brandsSection} from './sections/brandLogos'
 import {softCta} from './sections/softCtaSection'
+import {aboutSection} from './sections/aboutSection'
 import {contactPage} from './contact'
 import {modalSection} from './modalSection'
 import {siteSettings} from '../siteSettings'
 import {products} from './products'
+import {instagramSection} from './sections/instagramSection'
 
 export const schemaTypes = [
   testimonial,
@@ -30,9 +32,11 @@ export const schemaTypes = [
 
   //section types
   heroSection,
+  instagramSection,
   testimonialSection,
   softCta,
   brandsSection,
+  aboutSection,
 
   //other imports
   siteSettings,
