@@ -2,7 +2,6 @@ import {testimonial} from './testimonial'
 import {artist} from './artist'
 import {category} from './category'
 import {event} from './event'
-import {founderPage} from './founderPage'
 import {blogPost} from './post'
 import {aboutPage} from './aboutPage'
 import {homepage} from './homepage'
@@ -18,15 +17,18 @@ import {products} from './products'
 import {productType} from './productType'
 import {shopPage} from './shop'
 import {instagramSection} from './sections/instagramSection'
+import {blogPage} from './blog'
+import {eventPage} from './eventPage'
 
 export const schemaTypes = [
   testimonial,
+  blogPage,
   productType,
+  eventPage,
   shopPage,
   artist,
   category,
   event,
-  founderPage,
   blogPost,
   aboutPage,
   contactPage,

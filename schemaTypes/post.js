@@ -6,6 +6,7 @@ export const blogPost = defineType({
   type: 'document',
   fields: [
     {name: 'title', type: 'string', title: 'Title'},
+    {name: 'writer', type: 'string', title: 'Name of the writer'},
     {name: 'excerpt', type: 'string', title: 'Short description.'},
     {name: 'slug', type: 'slug', title: 'Slug', options: {source: 'title'}},
     {
