@@ -8,7 +8,21 @@ export const event = defineType({
     {name: 'title', type: 'string', title: 'Title'},
     {name: 'excerpt', type: 'string', title: 'Short description.'},
     {name: 'slug', type: 'slug', title: 'Slug', options: {source: 'title'}},
-    {name: 'description', type: 'text', title: 'Description'},
+    {
+      name: 'description',
+      type: 'array',
+      title: 'Body',
+      of: [
+        {type: 'block'},
+        {
+          type: 'image',
+          options: {hotspot: true},
+        },
+        {
+          type: 'socialPost',
+        },
+      ],
+    },
     {name: 'date', type: 'datetime', title: 'Date'},
     {
       name: 'eventType',

@@ -21,7 +21,7 @@ export const blogPage = defineType({
     },
     prepare(selection) {
       return {
-        title: `Blog: ${selection.title}`,
+        title: `${selection.title}`,
       }
     },
   },

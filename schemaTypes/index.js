@@ -19,6 +19,7 @@ import {shopPage} from './shop'
 import {instagramSection} from './sections/instagramSection'
 import {blogPage} from './blog'
 import {eventPage} from './eventPage'
+import {socialPost} from './socialPost'
 
 export const schemaTypes = [
   testimonial,
@@ -45,5 +46,6 @@ export const schemaTypes = [
   aboutSection,
 
   //other imports
+  socialPost,
   siteSettings,
 ]

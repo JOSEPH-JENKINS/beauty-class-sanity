@@ -19,6 +19,9 @@ export const blogPost = defineType({
           type: 'image',
           options: {hotspot: true},
         },
+        {
+          type: 'socialPost',
+        },
       ],
     },
     {name: 'category', type: 'reference', to: [{type: 'category'}]},

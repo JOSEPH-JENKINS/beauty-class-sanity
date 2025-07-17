@@ -14,7 +14,7 @@ export const eventPage = defineType({
     },
     prepare(selection) {
       return {
-        title: `Blog: ${selection.title}`,
+        title: `${selection.title}`,
       }
     },
   },
