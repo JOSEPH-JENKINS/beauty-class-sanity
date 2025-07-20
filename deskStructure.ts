@@ -50,7 +50,11 @@ export const structure = (S: StructureBuilder) =>
         .child(
           S.list()
             .title('Settings')
-            .items([S.documentTypeListItem('productType'), S.documentTypeListItem('modalSection')]),
+            .items([
+              S.documentTypeListItem('productType'),
+              S.documentTypeListItem('modalSection'),
+              S.documentTypeListItem('siteSettings'),
+            ]),
         ),
     ])
 
