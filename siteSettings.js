@@ -12,6 +12,12 @@ export const siteSettings = defineType({
       options: {hotspot: true},
     },
     {
+      name: 'openGraphImage',
+      title: 'Open Graph Image',
+      type: 'image',
+      options: {hotspot: true},
+    },
+    {
       name: 'logoAlt',
       title: 'Alternate Logo (used on scrolled or colored header)',
       type: 'image',
