@@ -8,7 +8,15 @@ export const testimonialSection = defineType({
     {
       name: 'title',
       title: 'Section Title',
-      type: 'string'
+      type: 'string',
+    },
+    {
+      name: 'mainImage',
+      title: 'Main Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
     },
     {
       name: 'testimonials',
