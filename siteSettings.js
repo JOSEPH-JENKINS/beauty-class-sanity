@@ -118,6 +118,18 @@ export const siteSettings = defineType({
           type: 'number',
           validation: (Rule) => Rule.min(0).max(512),
         },
+        {
+          name: 'topMargin',
+          title: 'Page Top Margin (px)',
+          type: 'number',
+          validation: (Rule) => Rule.min(0).max(512),
+        },
+        {
+          name: 'sideMargin',
+          title: 'Page Side Margin (px)',
+          type: 'number',
+          validation: (Rule) => Rule.min(0).max(512),
+        },
       ],
     },
   ],
