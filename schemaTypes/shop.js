@@ -18,11 +18,5 @@ export const shopPage = defineType({
       type: 'string',
       initialValue: 'Our Products',
     }),
-    defineField({
-      name: 'heroImage',
-      title: 'Hero Image',
-      type: 'image',
-      options: {hotspot: true},
-    }),
   ],
 })

@@ -12,12 +12,6 @@ export const siteSettings = defineType({
       options: {hotspot: true},
     },
     {
-      name: 'footerLogo',
-      title: 'Footer Logo',
-      type: 'image',
-      options: {hotspot: true},
-    },
-    {
       name: 'openGraphImage',
       title: 'Open Graph Image',
       type: 'image',
