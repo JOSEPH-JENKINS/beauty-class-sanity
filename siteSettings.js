@@ -12,6 +12,12 @@ export const siteSettings = defineType({
       options: {hotspot: true},
     },
     {
+      name: 'footerLogo',
+      title: 'Footer Logo',
+      type: 'image',
+      options: {hotspot: true},
+    },
+    {
       name: 'openGraphImage',
       title: 'Open Graph Image',
       type: 'image',
@@ -123,6 +129,18 @@ export const siteSettings = defineType({
           title: 'Page Side Margin (px)',
           type: 'number',
           validation: (Rule) => Rule.min(0).max(512),
+        },
+        {
+          name: 'secondaryHeaderColor',
+          title: 'Secondary Navigation Color',
+          type: 'string',
+          description: 'Used for secondary navigation header.',
+        },
+        {
+          name: 'buttonAccentColor',
+          title: 'Button Accent Color',
+          type: 'string',
+          description: 'Used for CTA buttons or hover effects',
         },
       ],
     },
