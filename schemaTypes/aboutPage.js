@@ -6,7 +6,18 @@ export const aboutPage = defineType({
   type: 'document',
   fields: [
     {name: 'title', type: 'string', title: 'Title'},
-    {name: 'content', type: 'text', title: 'Content'},
+    {
+      name: 'content',
+      type: 'array',
+      title: 'Content',
+      of: [
+        {type: 'block'},
+        {
+          type: 'image',
+          options: {hotspot: true},
+        },
+      ],
+    },
     {name: 'image', type: 'image', title: 'Image'},
   ],
 })

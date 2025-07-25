@@ -34,12 +34,6 @@ export const siteSettings = defineType({
       type: 'text',
     },
     {
-      name: 'supportText',
-      title: 'Support Text',
-      type: 'array',
-      of: [{type: 'block'}],
-    },
-    {
       name: 'socialLinks',
       title: 'Social Links',
       type: 'array',
