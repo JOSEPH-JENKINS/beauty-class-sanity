@@ -18,6 +18,7 @@ export const aboutPage = defineType({
         },
       ],
     },
-    {name: 'image', type: 'image', title: 'Image'},
+    {name: 'mainImage', type: 'image', title: 'Main Image'},
+    {name: 'secondaryImage', type: 'image', title: 'Secondary Image'},
   ],
 })
