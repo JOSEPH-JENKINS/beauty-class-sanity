@@ -24,6 +24,12 @@ export const siteSettings = defineType({
       options: {hotspot: true},
     },
     {
+      name: 'footerLogo',
+      title: 'Footer Logo',
+      type: 'image',
+      options: {hotspot: true},
+    },
+    {
       name: 'siteDescription',
       title: 'Site Description',
       type: 'text',
